@@ -44,9 +44,12 @@ main{
     left: 5%;
 }
 
+.txtWhit{
+  color: #ffffff;
+}
+
 h1 {
     font-size: 25px;
-    color: #ffffff;
     font-weight: 900;
     font-family: cursive, sans-serif;
 }
