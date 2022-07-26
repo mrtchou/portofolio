@@ -44,12 +44,7 @@ main{
     left: 5%;
 }
 
-.presentation{
-  position: relative;
-  padding-top: 10px;
-  margin-top: 10px;
-  border: 3px solid red;
-}
+
 
 .txtWhite{
   color: #ffffff;
@@ -769,6 +764,27 @@ footer{
     justify-content: space-between;
   }
 
+
+  .presentation{
+    /* position: relative;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin: 3%;
+
+    border: 3px solid red; */
+    display: none;
+
+  }
+
+
+  .contentContainerPricing h5{
+    margin-top: 7%;
+  }
+
+  .lignesDeco {
+    display: none;
+  }
+  
 
 
 }
