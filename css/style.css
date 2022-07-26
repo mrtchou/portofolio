@@ -32,11 +32,23 @@ main{
     height: 60px; 
     margin-top: -10px; 
     visibility: hidden;
-  border: 3px solid red;
   }
 
 
 
+
+
+
+
+  .presentation{
+     position: relative;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin: 3%;
+    transition: all 3s ease-in-out ;
+    background: #c2bcbc;
+    color: #333;
+    }
 
 
 .container-first {
@@ -493,12 +505,22 @@ footer{
 
   /* Activités */
 .activites{
-    height: 700px;
+    height: auto;
     width: auto;
     margin: 45px 3.8% 0 3.8%;
     padding: 0;
   }
 
+  .activites2{
+    width: 30%;
+    background: white;
+    border-radius: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 0 5px 20px 5px;
+    box-shadow: 0 5px 16px #0000002e;
+    transition: all 1s ease;
+    }
 
   
   .activites h2{
@@ -507,9 +529,15 @@ footer{
   }
   
   
-  .activites article img{
-    border-radius: 10px 10px 0 0;
+  .activites2 img{
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    width: 100vw;
+    height: 120px;
     object-fit: cover;
+      
   }
   
 
@@ -653,70 +681,59 @@ footer{
 
 
 @media screen and (max-width: 450px) {
-        body{
-          display: flex;
-          flex-direction: column;
-        }
+  body{
+  display: flex;
+  flex-direction: column;
+  }
 
-        .socialNetworks {
-          display: none;
-          /* list-style-type: none;
-          position: relative;
-          right: -19%;
-          display: flex;
-          transform: translateY(7.5em);
-          align-items:flex-end;
-          flex-direction: row; */
-      }
+  .socialNetworks {
+  display: none;
+  /* list-style-type: none;
+  position: relative;
+  right: -19%;
+  display: flex;
+  transform: translateY(7.5em);
+  align-items:flex-end;
+  flex-direction: row; */
+  }
 
+  
 
-
-
-
-      /* DEBUT partie navbar menu navigation */
-      .navbar{
-      display: flex;
-      align-items: stretch;
-      }
+  /* DEBUT partie navbar menu navigation */
+  .navbar{
+  display: flex;
+  align-items: stretch;
+  }
 
 
-      nav {
-          width: 100%;
-          height: 50px;
-          position:fixed;
-          z-index: 1;
-      }
+  nav {
+  width: 100%;
+  height: 50px;
+  position:fixed;
+  z-index: 1;
+  }
 
-      nav a{
-          text-decoration: none;
-          color: rgb(67, 63, 97);
-      }
+  nav a{
+  text-decoration: none;
+  color: rgb(67, 63, 97);
+  }
 
-
-
-      .liste-nav {
-          display: block;    
-      }
-
-
-
+  
+  .liste-nav {
+  display: block;    
+  }
+  /* FIN partie navbar menu navigation */
+  
 
 
+  /* DEBUT partie principal */
+  .contentContainer h5{
+  font-weight: 900;
+  color: #000;
+  border:1px solid #333;
+  }
 
-
-
-      /* DEBUT partie navbar menu navigation */
-
-      .contentContainer h5{
-      font-weight: 900;
-      color: #000;
-      border:1px solid #333;
-      }
-
-      
-      
-
-.contentContainer div{
+  .contentContainer div{
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -724,73 +741,70 @@ footer{
   right: 0;
   margin-top: 3%;
   margin-bottom: 3%;
+  }
 
-}
-
-.contentContainer img{
+  .contentContainer img{
   width: 100%;
   height: fit-content;
-}
+  }
 
 
-
-.activites{
-    height: auto;
-    width: auto;
-    margin: 45px 3.8% 0 3.8%;
+/* activite proposé */
+  .activites{
+  height: auto;
+  width: auto;
+  margin: 45px 3.8% 0 3.8%;
   }
 
   .activites:hover{
-    color: rgb(28, 112, 84);
-    cursor: pointer;
+  color: rgb(28, 112, 84);
+  cursor: pointer;
   }
 
 
-
   .activites h5{
-    
-    margin-top: 3%;
-    margin-bottom: 1%;
+  margin-top: 3%;
+  margin-bottom: 1%;
   }
 
 
   .activites div{
-    
-    margin-top: 15%;
+  margin-top: 15%;
   }
 
 
+
+/*footer */
   .footerPart1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   }
+
 
 
   .presentation{
-    /* position: relative;
-    padding-top: 10px;
-    margin-top: 10px;
-    margin: 3%;
-
-    border: 3px solid red; */
-    display: none;
-
+  /* position: relative;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin: 3%;
+  border: 3px solid red; */
+  display: none;
   }
 
 
   .contentContainerPricing h5{
-    margin-top: 7%;
+  margin-top: 7%;
   }
 
   .lignesDeco {
-    display: none;
+  display: none;
   }
-  
 
-.connexion{
+
+  .connexion{
   text-align:center;
-}
+  }
 
 
 
