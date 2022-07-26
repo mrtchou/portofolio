@@ -29,10 +29,9 @@ main{
 /* partie service proposé */
 .anchor{
     display: block;
-    height: 60px; 
-    margin-top: -10px; 
+    height: 60px; /*same height as header*/
+    margin-top: -10px; /*same height as header*/
     visibility: hidden;
-  border: 3px solid red;
   }
 
 
@@ -741,8 +740,7 @@ footer{
   }
 
   .activites:hover{
-    color: rgb(28, 112, 84);
-    cursor: pointer;
+   background-color: rgb(230, 222, 222);
   }
 
 
