@@ -67,4 +67,3 @@ $(".image").click(function () {
 
 
 
-
