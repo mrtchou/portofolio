@@ -26,8 +26,7 @@ position: relative;
 
 
 body{
-background:url('../img/background/background4.webp');
-font-family:Arial,Helvetica,sans-serif;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 height:100vh;
 background-size:cover;
 padding-bottom:50px;
@@ -77,6 +76,67 @@ flex-direction:column;
     color:#fff;
 }
 
+.fontCourier{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sloganHome{
+margin-top: 7%;
+margin-bottom: 5%;
+}
+
+body hr{
+    width:50px;
+    border: none;
+    border-bottom: 1px solid rgba(119, 119, 119, 0.25)
+}
+
+
+.containerPresentationTxt{
+    width: 60%;
+    margin: 1rem auto;
+    padding: 2rem;
+    text-align: justify;
+    transition: all 0.3s;
+    background-color:#FFFF;
+}
+.containerPresentationTxt p{
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+    background-color:#FFFF;
+
+}
+
+.containerPresentationTxt p:first-child::first-letter{
+    color:#FE5F55;
+    font-weight: bold;
+    font-size: 70px;
+    float: left;
+    line-height: 60px;
+    padding-right: 8px;
+    margin-top: -3px;
+}
+
+@media screen and (max-width:600px){
+    .containerPresentationTxt{
+        width: 100%;
+        background-color:#FFFF;
+
+        padding: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+  
 h1{
     font-size:25px;
     font-family:cursive,sans-serif;
@@ -368,7 +428,7 @@ text-shadow:0 1px rgba(255,255,255,.1);
 }
 
 .footerRemonter img{
-width:9%;
+width:3%;
 height:auto;
 position:sticky;
 }
