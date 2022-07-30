@@ -11,7 +11,7 @@
 }
 
 
-
+/* body page Home */
 body#home{
 background: rgb(255, 255, 255);
 font-family: Arial, Helvetica, sans-serif;
@@ -24,7 +24,7 @@ position: relative;
 }
 
 
-
+/* body general */
 body{
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 height:100vh;
@@ -63,7 +63,7 @@ flex-direction:column;
 
 .container-first{
     position:absolute;
-    top:27vh;
+    top:7vh;
     left:5%;
 }
 
@@ -82,8 +82,10 @@ flex-direction:column;
 
 .sloganHome{
 margin-top: 7%;
-margin-bottom: 5%;
+margin-left: 25%;
 }
+
+
 
 body hr{
     width:50px;
@@ -99,7 +101,10 @@ body hr{
     text-align: justify;
     transition: all 0.3s;
     background-color:#FFFF;
+margin-top: 63px;
 }
+
+
 .containerPresentationTxt p{
     line-height: 1.5;
     letter-spacing: 0.3px;
@@ -118,14 +123,7 @@ body hr{
     margin-top: -3px;
 }
 
-@media screen and (max-width:600px){
-    .containerPresentationTxt{
-        width: 100%;
-        background-color:#FFFF;
 
-        padding: 1rem;
-    }
-}
 
 
 
@@ -143,8 +141,11 @@ h1{
 }
 
 .container-btns{
-    top:21vh;
+    position:sticky;
+    left: 3%;
 }
+
+
 
 .btn-first{
 border:2px solid #fff;
@@ -176,10 +177,10 @@ transition:.3s ease-in-out;
 color:#333;
 }
 
+
 .lignesDeco{
 position:absolute;
-top:90px;
-left:5%;
+top:18%;
 }
 
 .ligne1Deco{
@@ -189,10 +190,17 @@ width:250px;
 .ligne2Deco{
 width:140px;
 position:relative;
-top:20px;
+top: 15px;
 }
 
+
+
+
+
+
+
 .socialNetworks{
+    display: none; /* temporairement cached for signup account in fb, insta... */
 list-style-type:none;
 right:3%;
 transform:translateY(5em);
@@ -471,7 +479,8 @@ font-weight:700;
 }
 
 .activites{
-height:700px;
+display: flex;
+flex-direction: column;
 width:auto;
 margin:45px 3.8% 0;
 padding:0;
@@ -482,12 +491,17 @@ font-size:1.3em;
 margin:70px 0 30px;
 }
 
-.activites article img{
+.activites div img{
 border-radius:10px 10px 0 0;
 object-fit:cover;
 }
 
-.activites article h3{
+.activites div {
+    display: flex;
+    flex-direction: column;
+}
+
+.activites div h3{
 font-size:1em;
 margin-left:17px;
 }
@@ -554,8 +568,11 @@ opacity:1;
 }
 
 
+.displayNone{
+    visibility: hidden;
+}
 
-
+/* 
 @media screen and (max-width:900px){
 
     
@@ -586,12 +603,12 @@ top:50px;
 }
 
 }
+ */
 
 
 
 
-
-@media screen and (max-width:450px){
+@media screen and (max-width:999px){
 
 
 body{
@@ -757,7 +774,6 @@ margin-bottom:1%;
   
   
     .contentContainerPricing h5{
-
     margin-top: 7%;
 }
 

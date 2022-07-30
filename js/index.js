@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
 
     TL
         .staggerFrom(titreSpans, 1, { top: -50, opacity: 0, ease: "power2.out" }, 0.3)
-        .staggerFrom(btns, 1, { opacity: 0, ease: "power2.out" }, 0.3, '-=1')
+        .staggerFrom(btns, 5, { opacity: 0, ease: "bounce.out", y: -800 }, 0.3, '-=1')
         .from(l1, 1, { width: 0, ease: "power2.out" }, '-=2')
         .from(l2, 1, { width: 0, ease: "power2.out" }, '-=2')
         .from(logo, 0.4, { transform: "scale(0)", ease: "power2.out" }, '-=2')
