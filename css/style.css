@@ -632,11 +632,10 @@ opacity:1;
 .contact{
     margin: 0px;
     padding: 0px;
-    background-color: #fef1df;
-    position: absolute;
+    /* position: absolute; */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     font-family: "Roboto", sans-serif;
     font-weight: bold;
 }
@@ -645,33 +644,37 @@ opacity:1;
 
 form {
     padding: 30px;
-    background-color: white;
     border-radius: 10px;
+    align-items: center;
+    margin-left: 17%;
+    margin-right: 17%;
   }
+
   form h1 {
-    font-size: 20px;
+    font-size: 2em;
   }
-  form .separation {
-    width: 100%;
-    height: 1px;
-    background-color: #747cdf;
-  }
+
+ 
   form .corps-formulaire {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 3%;
+    margin-top: 3%;
   }
+
+
   form .corps-formulaire .groupe {
     position: relative; /* Pour mettre positionner l’élément dans le flux normal de la page */
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    
   }
   form .corps-formulaire .left .groupe input {
     margin-top: 5px;
     padding: 10px 5px 10px 30px;
-    border: 1px solid #c9c9c9;
-    outline-color: #747cdf;
+    border: 2px solid #74dfc4;
+    outline-color: #74dadf;
     border-radius: 5px;
   }
   form .corps-formulaire .left .groupe i {
@@ -679,7 +682,7 @@ form {
     left: 0;
     top: 25px;
     padding: 9px 8px;
-    color: #747cdf;
+    color: #3ca4be;
   }
   form .corps-formulaire .droite {
     margin-left: 40px;
@@ -690,24 +693,38 @@ form {
   form .corps-formulaire .droite .groupe textarea {
     margin-top: 5px;
     padding: 10px;
-    background-color: #f1f1f1;
-    border: 2px solid #747cdf;
+    /* background-color: #f1f1f1; */
+    border: 2px solid #74dfc4;
     outline: none;
     border-radius: 5px;
     resize: none;
-    height: 72%;
+    height: 100%;
   }
+
+  .droite {
+    width: 65%;
+  }
+  
+  .left {
+    width: 30%;
+  }
+
+
+
+  
   form .pied-formulaire button {
-    margin-top: 10px;
-    background-color: #747cdf;
+    margin-top: 10%;
+    background-color: #5dbdee;
     color: white;
-    font-size: 15px;
+    font-size: 1em;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     outline: none;
     cursor: pointer;
     transition: transform 0.5s;
+    width: 35em;
+    height: 5em;
   }
   form .pied-formulaire button:hover {
     transform: scale(1.05);
