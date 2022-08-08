@@ -65,7 +65,7 @@
         </ul>
       </nav>
     </section>
-    <section class="content">
+    <section class="contentContact">
         <div class="contact">
             <!-- formulaire de contact relier au code PHP ci dessous-->
             <form method="post">
@@ -104,6 +104,7 @@
             </form>
             <!-- partie du code PHP pour l'envoie du mail via le formulaire du site -->
             <?php
+            
             if (isset($_POST['message'])) {
                 $entete  = 'MIME-Version: 1.0' . "\r\n";
                 $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
@@ -117,8 +118,11 @@
                 <b>Message : </b>' . htmlspecialchars($_POST['message']) . '</p>';
                 $retour = mail('kirova@live.fr', 'Envoi depuis page Contact', $message, $entete);
                 if($retour)
-                    echo '<p class="succesMessageSend">Votre message a bien été envoyé.</p>';
-            }
+                
+                    echo '<p class="succesMessageSend">Votre message a bien été envoyé.</p>' . 
+                    '<script>setTimeout(function () { window.location.href = "https://bepag.fr"; },7000); </script>';
+
+                  }
             ?>
         </div>
     </section>
