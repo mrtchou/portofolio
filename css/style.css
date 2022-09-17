@@ -177,7 +177,6 @@ font-family:sans-serif;
   background-size: 190% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 3s linear infinite;
@@ -196,12 +195,22 @@ font-family:sans-serif;
 
 
 
+
+
+
+
+
+
+
+
+
+
 .ligne1Deco,.ligne2Deco{
 height:3px;
 border-radius:5px;
 }
 
-.btn-first:hover,.ligne1Deco,.ligne2Deco,footer,nav{
+.btn-firstt:hover,.ligne1Deco,.ligne2Deco,footer,nav{
 background:#f1f1f1;
 }
 
